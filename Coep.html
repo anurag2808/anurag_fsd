@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML CSS Page</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin: 20px;
+            width: 90%;
+            background-image: linear-gradient(to right, rgb(62, 190, 236), rgb(249, 244, 244));
+        }
+
+        header h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .styled-button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px;
+            border: dotted;
+            border-radius: 20px;
+            font-size: 1em;
+        }
+
+        .styled-button:hover {
+            background-color: #b30000;
+        }
+
+        .programs {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .program {
+            margin: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            min-width: 150px; /* Minimum width to prevent too narrow columns */
+            max-width: 300px; /* Maximum width to ensure the layout doesn't stretch too much */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #43c4e8;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        td {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="Assign1.html">Home</a>
+        <a href="Mit.html">MIT Pune</a>
+        <a href="Simbi.html">Symbiosis International</a>
+        <a href="Coep.html">COEP</a>
+    </div>
+    <div class="container">
+        <header><h1>Welcome to College of Engineering, Pune</h1></header>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xq4U1opOnSo?si=9d36Ob40kdc0fSvB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121047.1057856825!2d73.6454514134709!3d18.541458233249507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c0883858b873%3A0x1d68fbf2cac75519!2sCOEP%20Technological%20University!5e0!3m2!1sen!2sin!4v1721801859293!5m2!1sen!2sin" width="560" height="315" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+        <h1>Programs Offered</h1>
+        <div class="programs">
+            <div class="program" style="background-color: #43c4e8;">
+                <h2>B.Tech in Computer Science</h2>
+                <p>Learn cutting-edge technologies and programming languages, preparing you for a career in the IT industry.</p>
+            </div>
+            <div class="program" style="background-color: #cc6f1d;">
+                <h2>B.Tech in Electronics Engineering</h2>
+                <p>Focus on designing, developing, and testing electronic systems and components.</p>
+            </div>
+            <div class="program" style="background-color: #cc23b0;">
+                <h2>B.Tech in Mechanical Engineering</h2>
+                <p>Study the principles of mechanics, materials, and energy to design and manufacture machines and devices.</p>
+            </div>
+            <div class="program" style="background-color: #2fe277;">
+                <h2>MBA in Finance</h2>
+                <p>Gain expertise in financial management, investment strategies, and market analysis to excel in the financial sector.</p>
+            </div>
+            <div class="program" style="background-color: #def229;">
+                <h2>MBA in Marketing</h2>
+                <p>Develop skills in market research, consumer behavior, and strategic marketing to lead marketing campaigns and initiatives.</p>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Contact</th>
+                    <th>Email</th>
+                    <th style="background-color: rgb(152, 42, 42); color: #ffffff65;">Institution</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Admission Office</td>
+                    <td>admissions@coep.edu</td>
+                    <td rowspan="3">COEP</td>
+                </tr>
+                <tr>
+                    <td>Course Inquiries</td>
+                    <td>courses@coep.edu</td>
+                </tr>
+                <tr>
+                    <td>Department Info</td>
+                    <td>departments@coep.edu</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>Click Here To Enroll.</p>
+        <form action="enroll.html" method="get">
+            <button class="styled-button">Enroll</button>
+        </form>
+    </div>
+</body>
+</html>
