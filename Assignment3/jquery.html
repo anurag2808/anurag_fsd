@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Product Showcase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+        #product-image {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            margin-bottom: 20px;
+            position: relative; /* Ensure position is relative for moving */
+        }
+        .product-description {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .product-container {
+            display: inline-block;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #change-style {
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #008cba;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="page-title">Welcome to Our Product Showcase</h1>
+    </header>
+
+    <div class="product-container">
+        <img id="product-image" src="sony_a7cr.jpeg" alt="Product Image">
+        <p id="product-description" class="product-description">This is an amazing product that you will love!</p>
+        <button id="change-text" onclick="changeText()">Change Description</button>
+        <button id="change-image">Change Image</button>
+        <button id="change-position">Change Position</button>
+        <button id="add-text-node">Add Text Node</button>
+        <button id="delete-node">Delete Node</button>
+        <button id="change-style">Change Style with jQuery</button>
+    </div>
+
+    <form id="product-form">
+        <label for="product-name">Product Name:</label>
+        <input type="text" id="product-name" name="product-name"><br><br>
+        <label for="product-price">Product Price:</label>
+        <input type="text" id="product-price" name="product-price"><br><br>
+        <button type="button" id="submit-form">Submit</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
